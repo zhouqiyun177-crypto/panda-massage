@@ -1,0 +1,16 @@
+/* index.css - minimal global styles for Panda Massage */
+/* This file ensures /index.css exists at build time and can hold future custom styles. */
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Example base styles (can be extended) */
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
