@@ -1,0 +1,37 @@
+Images Required for Panda Massage Website
+==========================================
+
+The following image files need to be placed in this directory:
+
+THERAPIST IMAGES (already provided):
+✓ Jojo.png
+✓ Judy.png
+✓ Lucy.png
+
+SERVICE IMAGES (need to be downloaded/added):
+× thai-massage.jpg         - Royal Thai Massage service image
+× aromatherapy.jpg          - Aromatherapy Bliss service image
+× deep-tissue.jpg           - Deep Tissue Revival service image
+× gold-facial.jpg           - Gold Facial Treatment service image
+× hammam.jpg                - Moroccan Bath (Hammam) service image
+× hot-stone.jpg             - Hot Stone Therapy service image
+
+OTHER IMAGES:
+× map-placeholder.jpg       - Map placeholder for Contact page
+
+RECOMMENDED SOURCES:
+- Unsplash: https://unsplash.com (search for "massage", "spa", "wellness", "facial", etc.)
+- Pexels: https://www.pexels.com
+- Pixabay: https://pixabay.com
+
+IMAGE REQUIREMENTS:
+- Format: JPG preferred (for service images) or PNG (for therapists already done)
+- Minimum resolution: 800x600px
+- Recommended: 1200x800px or higher for better quality
+- Aspect ratio: Landscape preferred (16:9 or 4:3)
+
+After adding images, run these commands to rebuild and deploy:
+  npm run build
+  git add public/spa-pic/*
+  git commit -m "Add service and placeholder images"
+  git push

@@ -34,7 +34,6 @@ export interface Therapist {
   name: string;
   nickname: string;
   country: string;
-  flag: string;
   height: string;
   weight: string;
   specialties: string[];

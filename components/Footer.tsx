@@ -10,9 +10,29 @@ const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="space-y-6">
-            <div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white text-black flex-shrink-0 p-1">
+                {/* Panda SVG Logo */}
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  {/* Ears (Black) */}
+                  <circle cx="25" cy="25" r="15" fill="#111" />
+                  <circle cx="75" cy="25" r="15" fill="#111" />
+                  {/* Head (White) */}
+                  <circle cx="50" cy="55" r="40" fill="white" stroke="#111" strokeWidth="2" />
+                  {/* Eye Patches (Black) */}
+                  <ellipse cx="35" cy="50" rx="12" ry="10" fill="#111" transform="rotate(-15 35 50)" />
+                  <ellipse cx="65" cy="50" rx="12" ry="10" fill="#111" transform="rotate(15 65 50)" />
+                  {/* Eyes (White dots) */}
+                  <circle cx="37" cy="48" r="3" fill="white" />
+                  <circle cx="63" cy="48" r="3" fill="white" />
+                  {/* Nose (Black) */}
+                  <ellipse cx="50" cy="65" rx="7" ry="5" fill="#111" />
+                </svg>
+              </div>
+              <div>
                 <h3 className="text-2xl font-serif font-bold text-white tracking-wide">PANDA MASSAGE</h3>
                 <p className="text-xs text-gray-400 uppercase tracking-widest mt-1">Professional Massage & Spa</p>
+              </div>
             </div>
             <p className="text-gray-400 leading-relaxed text-sm">
               Experience professional relaxation in Dubai. 
@@ -42,7 +62,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin size={18} className="text-white mt-1 flex-shrink-0" />
-                <span>Marina Walk, Dubai Marina,<br />Dubai, UAE</span>
+                <span>Dubai Sport City,<br />Dubai, United Arab Emirates</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone size={18} className="text-white flex-shrink-0" />
@@ -61,7 +81,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex justify-between border-b border-gray-800 pb-2">
                 <span>Monday - Sunday</span>
-                <span className="text-white font-bold">10:00 AM - 12:00 AM</span>
+                <span className="text-white font-bold">10:00 AM - 1:00 AM</span>
               </li>
               <li className="pt-2 text-xs italic text-gray-500">
                 *Late night bookings available upon request.

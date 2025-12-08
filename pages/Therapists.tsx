@@ -32,7 +32,7 @@ const Therapists: React.FC = () => {
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent pt-20 pb-6 px-6">
                             <h3 className="text-3xl font-serif text-white">{therapist.nickname}</h3>
                             <div className="flex items-center gap-2 text-white/90 text-sm font-bold uppercase tracking-widest mt-1">
-                                <span>{therapist.flag} {therapist.country}</span>
+                                <span>{therapist.country}</span>
                             </div>
                         </div>
                     </div>

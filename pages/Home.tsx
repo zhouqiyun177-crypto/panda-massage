@@ -4,6 +4,9 @@ import { Flower2, Heart, ShieldCheck } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import { SERVICES } from '../constants';
 
+// Resolve static image via Vite so path is generated reliably
+const homeImg = new URL('/spa-pic/home_pure_relax.png', import.meta.url).href;
+
 const Home: React.FC = () => {
   const featuredServices = SERVICES.slice(0, 3);
 
@@ -81,10 +84,12 @@ const Home: React.FC = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative p-4">
             <div className="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-black/10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1600334129128-685c513e2337?q=80&w=800&auto=format&fit=crop" 
-              alt="Interior" 
-              className="w-full h-[550px] object-cover rounded-lg shadow-2xl relative z-10"
+            <img
+              src={homeImg}
+              alt="Interior"
+              loading="lazy"
+              decoding="async"
+              className="w-full max-h-[550px] h-auto object-contain rounded-lg shadow-2xl relative z-10 bg-gray-50"
             />
             <div className="absolute bottom-0 right-0 w-32 h-32 border-b-2 border-r-2 border-black/10"></div>
           </div>
@@ -97,7 +102,7 @@ const Home: React.FC = () => {
             </div>
             <div className="w-24 h-1 bg-black rounded-full"></div>
             <p className="text-gray-600 leading-relaxed text-lg font-light">
-              Nestled in the vibrant heart of Dubai Marina, Panda Massage offers a retreat focused on professional care and purity. 
+              Nestled in the vibrant heart of Dubai Sport City, Panda Massage offers a retreat focused on professional care and purity. 
               Our minimalist, zen-inspired environment allows you to disconnect from the noise and reconnect with yourself.
             </p>
             <p className="text-gray-500 leading-relaxed font-light">

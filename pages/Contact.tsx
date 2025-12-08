@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-black font-bold uppercase text-sm mb-1 tracking-wider">Location</h4>
-                    <p className="text-gray-500 leading-relaxed">Marina Walk, Dubai Marina<br/>Dubai, United Arab Emirates</p>
+                    <p className="text-gray-500 leading-relaxed">Dubai Sport City<br/>Dubai, United Arab Emirates</p>
                   </div>
                 </div>
 
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-black font-bold uppercase text-sm mb-1 tracking-wider">Hours</h4>
-                    <p className="text-gray-500">Daily: 10:00 AM - 12:00 AM</p>
+                    <p className="text-gray-500">Monday - Sunday: 10:00 AM - 1:00 AM</p>
                   </div>
                 </div>
               </div>
