@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-black font-bold uppercase text-sm mb-1 tracking-wider">Phone</h4>
-                    <p className="text-gray-500 font-medium">+971 56 705 3281</p>
+                    <p className="text-gray-500 font-medium">+971 50 991 7415</p>
                     <p className="text-gray-400 text-xs mt-1">Available 24/7</p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
             </div>
 
             <a 
-                href="https://wa.me/971567053281"
+                href="https://wa.me/971509917415"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#128C7E] transition-all duration-300 transform hover:scale-105 shadow-xl"
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
 
             <div className="pt-8 border-t border-gray-100">
                  <p className="text-sm text-gray-500">
-                    Prefer to call? <a href="tel:+971567053281" className="text-black font-bold hover:text-gray-600 transition-colors">+971 56 705 3281</a>
+                    Prefer to call? <a href="tel:+971509917415" className="text-black font-bold hover:text-gray-600 transition-colors">+971 50 991 7415</a>
                  </p>
             </div>
           </div>

@@ -3,23 +3,23 @@ import { Phone } from 'lucide-react';
 
 const FloatingActions: React.FC = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4 items-center">
+    <div className="fixed bottom-20 right-6 z-50 flex flex-col gap-4 items-center">
         
       {/* Phone Call Button */}
       <a
-        href="tel:+971567053281"
+        href="tel:+971509917415"
         className="w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-500 transition-all duration-300 hover:scale-110 flex items-center justify-center group relative"
         aria-label="Call Now"
       >
         <Phone size={24} fill="white" className="text-white" />
         <span className="absolute right-full mr-4 bg-white text-dark-900 px-4 py-2 rounded-sm text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-md pointer-events-none hidden md:block">
-          Call +971 56 705 3281
+          Call +971 50 991 7415
         </span>
       </a>
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/971567053281"
+        href="https://wa.me/971509917415"
         target="_blank"
         rel="noopener noreferrer"
         className="w-16 h-16 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 flex items-center justify-center group relative animate-fade-in p-3"

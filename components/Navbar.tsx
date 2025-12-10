@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <a
-              href="https://wa.me/971567053281"
+              href="https://wa.me/971509917415"
               target="_blank"
               rel="noopener noreferrer"
               className={`px-6 py-2 border transition-all duration-300 rounded-full font-serif italic ${
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Right Actions */}
           <div className="md:hidden flex items-center gap-4 z-10">
-             <a href="tel:+971567053281" className={`${textColorClass} transition-colors`}>
+             <a href="tel:+971509917415" className={`${textColorClass} transition-colors`}>
                 <Phone size={20} />
              </a>
             <button
@@ -156,7 +156,7 @@ const Navbar: React.FC = () => {
           ))}
           <div className="mt-4 pt-4 border-t border-gray-100 w-full flex flex-col gap-3">
              <a
-              href="https://wa.me/971567053281"
+              href="https://wa.me/971509917415"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-3 bg-black text-white font-bold uppercase tracking-wider rounded-full"

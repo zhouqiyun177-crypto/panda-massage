@@ -1,10 +1,24 @@
 import React from 'react';
-import { Ruler, Weight } from 'lucide-react';
 import { THERAPISTS } from '../constants';
+
+// Import therapist images
+import jojoImg from '/spa-pic/Jojo.png';
+import judyImg from '/spa-pic/Judy.png';
+import lucyImg from '/spa-pic/Lucy.png';
+import jayjayImg from '/spa-pic/Jayjay.png';
+
+const therapistImages: { [key: string]: string } = {
+  Jojo: jojoImg,
+  Judy: judyImg,
+  Lucy: lucyImg,
+  Jayjay: jayjayImg,
+};
 
 const Therapists: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen pt-20">
+    <div className="bg-white min-h-screen overflow-x-hidden">
+      {/* Spacer to clear fixed navbar on mobile */}
+      <div className="h-20 md:h-24"></div>
       {/* Header */}
       <div className="bg-panda-gray py-20 text-center px-4 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -25,29 +39,26 @@ const Therapists: React.FC = () => {
                 <div key={therapist.id} className="group bg-white rounded-xl overflow-hidden border border-gray-100 hover:border-black/10 transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl">
                     <div className="relative h-96 overflow-hidden bg-gray-100">
                         <img 
-                            src={therapist.image} 
-                            alt={therapist.name} 
-                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                          src={therapistImages[therapist.nickname] || therapist.image} 
+                          alt={therapist.name} 
+                          className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent pt-20 pb-6 px-6">
                             <h3 className="text-3xl font-serif text-white">{therapist.nickname}</h3>
-                            <div className="flex items-center gap-2 text-white/90 text-sm font-bold uppercase tracking-widest mt-1">
-                                <span>{therapist.country}</span>
-                            </div>
                         </div>
                     </div>
                     
                     <div className="p-6 space-y-5">
-                        {/* Stats */}
-                        <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                             <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
-                                <Ruler size={18} className="text-black" />
-                                <span>{therapist.height}</span>
-                             </div>
-                             <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
-                                <Weight size={18} className="text-black" />
-                                <span>{therapist.weight}</span>
-                             </div>
+                        {/* Country with Flag */}
+                        <div className="flex items-center gap-2 pb-3 border-b border-gray-100">
+                            <svg className="w-5 h-4" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="900" height="100" fill="#CE3910"/>
+                                <rect y="100" width="900" height="100" fill="white"/>
+                                <rect y="200" width="900" height="100" fill="#142B7F"/>
+                                <rect y="300" width="900" height="100" fill="white"/>
+                                <rect y="400" width="900" height="100" fill="#CE3910"/>
+                            </svg>
+                            <p className="text-xs font-bold text-gray-600 uppercase tracking-widest">{therapist.country}</p>
                         </div>
 
                         {/* Specialties */}
@@ -64,7 +75,7 @@ const Therapists: React.FC = () => {
 
                         {/* Booking Button */}
                         <a 
-                          href={`https://wa.me/971567053281?text=Hi, I would like to book an appointment with ${therapist.nickname}`}
+                          href={`https://wa.me/971509917415?text=Hi, I would like to book an appointment with ${therapist.nickname}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block w-full text-center bg-black text-white py-3 font-bold uppercase tracking-wider text-sm hover:bg-gray-800 transition-colors rounded-lg mt-4 shadow-md"

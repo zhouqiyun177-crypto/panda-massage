@@ -12,7 +12,7 @@ export const SERVICES: Service[] = [
   {
     id: '1',
     title: 'Royal Thai Massage',
-    description: 'A traditional therapy combining acupressure, Indian Ayurvedic principles, and assisted yoga postures.',
+    description: 'Traditional therapy combining acupressure and assisted yoga postures to align body and mind. Improves flexibility, energy flow, and promotes deep relaxation through ancient healing techniques.',
     duration: '60 min / 90 min',
     price: 'AED 250 / AED 350',
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop',
@@ -21,52 +21,62 @@ export const SERVICES: Service[] = [
   {
     id: '2',
     title: 'Aromatherapy Bliss',
-    description: 'Gentle massage using essential oils to promote healing, a feeling of well-being, and relaxation.',
+    description: 'Gentle massage with essential oils to promote healing and relaxation. Aromatic oils enhance circulation and soothe tired muscles while creating well-being.',
     duration: '60 min',
-    price: 'AED 280',
+    price: 'AED 300',
     image: '/spa-pic/aroma.png',
     category: 'massage',
   },
   {
     id: '3',
     title: 'Deep Tissue Revival',
-    description: 'Designed to relieve severe tension in the muscle and the connective tissue or fascia.',
+    description: 'Intensive therapy targeting deep muscle layers with sustained pressure to relieve chronic tension. Improves mobility and releases severe muscle knots through specialized techniques.',
     duration: '60 min',
-    price: 'AED 300',
+    price: 'AED 350',
     image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop',
     category: 'massage',
   },
   {
     id: '4',
-    title: 'Gold Facial Treatment',
-    description: 'Luxurious anti-aging treatment using 24k gold leafs to restore skin elasticity and glow.',
-    duration: '75 min',
-    price: 'AED 450',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop',
-    category: 'facial',
+    title: 'Head, Shoulder & Neck Massage',
+    description: 'Focused treatment relieving tension in head, shoulders, and neck areas. Alleviates headaches, reduces stiffness, and improves circulation in stress-prone zones.',
+    duration: '60 min',
+    price: 'AED 300',
+    image: '/spa-pic/services_head_massage.png',
+    category: 'massage',
   },
   {
     id: '5',
-    title: 'Moroccan Bath (Hammam)',
-    description: 'Traditional cleansing ritual involving steam, black soap scrub, and full body exfoliation.',
+    title: 'Foot Massage',
+    description: 'Reflexology-based treatment stimulating pressure points to promote relaxation and circulation. Balances body and mind while providing immediate comfort and energy restoration.',
     duration: '60 min',
-    price: 'AED 350',
-    image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=800&auto=format&fit=crop',
-    category: 'body-treatment',
+    price: 'AED 250',
+    image: '/spa-pic/services_foot_massage.png',
+    category: 'massage',
   },
   {
     id: '6',
-    title: 'Hot Stone Therapy',
-    description: 'Smooth, flat, heated stones are placed on specific parts of your body to maximize relaxation.',
+    title: 'Gua Sha Therapy',
+    description: 'Ancient Chinese technique using smooth stones to improve circulation and release tension. Reduces inflammation and promotes healing energy flow throughout the body naturally.',
+    duration: '60 min',
+    price: 'AED 350',
+    image: '/spa-pic/services_guasha.png',
+    category: 'massage',
+  },
+  {
+    id: '7',
+    title: 'Couples Retreat Package',
+    description: 'Synchronized 90-minute full body massage in a private romantic setting. Includes premium amenities and refreshments for ultimate relaxation together.',
     duration: '90 min',
-    price: 'AED 400',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop',
+    price: 'AED 600',
+    image: '/spa-pic/services_couples_massages.png',
     category: 'massage',
   },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [];
 
+// Therapist team members
 export const THERAPISTS: Therapist[] = [
   {
     id: 't1',
@@ -85,7 +95,7 @@ export const THERAPISTS: Therapist[] = [
     country: 'Thailand',
     height: '165 cm',
     weight: '50 kg',
-    specialties: ['Aromatherapy', 'Swedish Massage', 'Hot Stone'],
+    specialties: ['Aromatherapy', 'Swedish Massage', 'Deep Tissue Revival'],
     image: '/spa-pic/Judy.png'
   },
   {
@@ -95,7 +105,17 @@ export const THERAPISTS: Therapist[] = [
     country: 'Thailand',
     height: '160 cm',
     weight: '48 kg',
-    specialties: ['Reflexology', 'Body Scrub', 'Facial Treatment'],
+    specialties: ['Reflexology', 'Body Scrub', 'Foot Massage'],
     image: '/spa-pic/Lucy.png'
+  },
+  {
+    id: 't4',
+    name: 'Jayjay',
+    nickname: 'Jayjay',
+    country: 'Thailand',
+    height: '170 cm',
+    weight: '80 kg',
+    specialties: ['Royal Thai Massage', 'Gua Sha Therapy', 'Head, Shoulder & Neck Massage'],
+    image: '/spa-pic/Jayjay.png'
   }
 ];

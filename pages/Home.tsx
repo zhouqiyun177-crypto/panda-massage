@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               Our Menu
             </Link>
             <a 
-              href="https://wa.me/971567053281"
+              href="https://wa.me/971509917415"
               target="_blank"
               rel="noopener noreferrer"
               className="px-10 py-4 bg-transparent border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 min-w-[180px] rounded-full backdrop-blur-sm"
@@ -154,13 +154,13 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a 
-              href="tel:+971567053281"
+              href="tel:+971509917415"
               className="px-10 py-4 bg-black text-white font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors shadow-xl rounded-full"
             >
               Call to Book
             </a>
             <a 
-              href="https://wa.me/971567053281"
+              href="https://wa.me/971509917415"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 border-2 border-black text-black font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors rounded-full group"

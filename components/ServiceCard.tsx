@@ -1,17 +1,38 @@
 import React from 'react';
 import { Clock, ArrowRight } from 'lucide-react';
 import { Service } from '../types';
+import guashaImg from '/spa-pic/services_guasha.png';
+import headMassageImg from '/spa-pic/services_head_massage.png';
+import footMassageImg from '/spa-pic/services_foot_massage.png';
+import couplesMassageImg from '/spa-pic/services_couples_massages.png';
 
 interface ServiceCardProps {
   service: Service;
 }
 
+const getImageUrl = (imagePath: string): string => {
+  if (imagePath.includes('services_guasha.png')) {
+    return guashaImg;
+  }
+  if (imagePath.includes('services_head_massage.png')) {
+    return headMassageImg;
+  }
+  if (imagePath.includes('services_foot_massage.png')) {
+    return footMassageImg;
+  }
+  if (imagePath.includes('services_couples_massages.png')) {
+    return couplesMassageImg;
+  }
+  return imagePath;
+};
+
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
+  const imageUrl = getImageUrl(service.image);
   return (
     <div className="group relative bg-white overflow-hidden rounded-xl hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border border-gray-100">
       <div className="relative h-64 overflow-hidden">
         <img 
-          src={service.image} 
+          src={imageUrl} 
           alt={service.title} 
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
         />
@@ -28,7 +49,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           </h3>
         </div>
         
-        <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-2">
+        <p className="text-gray-600 text-sm leading-relaxed mb-6">
           {service.description}
         </p>
         
@@ -43,7 +64,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         </div>
 
         <a 
-          href="https://wa.me/971567053281"
+          href="https://wa.me/971509917415"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 w-full flex items-center justify-center gap-2 bg-gray-50 border border-gray-200 text-black py-3 px-4 hover:bg-black hover:border-black hover:text-white transition-all duration-300 text-sm uppercase tracking-wider rounded-lg font-bold"

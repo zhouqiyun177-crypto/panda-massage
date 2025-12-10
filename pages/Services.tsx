@@ -43,27 +43,6 @@ const Services: React.FC = () => {
           );
         })}
       </div>
-      
-      {/* Special Package Banner */}
-      <div className="max-w-7xl mx-auto px-4 mb-20">
-        <div className="bg-black text-white p-8 md:p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
-            <div className="space-y-4">
-                <h3 className="text-3xl font-serif">Couples Retreat Package</h3>
-                <p className="text-gray-300 max-w-xl text-lg">
-                    Experience pure relaxation together. Includes 60min full body massage, 30min facial, and private jacuzzi access with refreshments.
-                </p>
-                <p className="text-white font-bold text-2xl">AED 950 / Couple</p>
-            </div>
-            <a 
-              href="https://wa.me/971567053281" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whitespace-nowrap px-8 py-4 bg-white text-black font-bold uppercase hover:bg-gray-200 transition-colors rounded-full shadow-lg"
-            >
-                Book Package
-            </a>
-        </div>
-      </div>
     </div>
   );
 };
