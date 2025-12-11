@@ -107,18 +107,27 @@ const Contact: React.FC = () => {
 
         </div>
         
-        {/* Map */}
-        <div className="mt-20 w-full h-96 bg-gray-100 rounded-xl overflow-hidden relative group border border-gray-200">
-            <img 
-                src="https://images.unsplash.com/photo-1577086663218-f22332155c50?q=80&w=1200&auto=format&fit=crop" 
-                alt="Map Location Placeholder" 
-                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <button className="bg-white text-black px-10 py-4 font-bold uppercase text-sm rounded-full hover:bg-black hover:text-white transition-colors shadow-xl">
-                View on Google Maps
-                </button>
-            </div>
+        {/* Google Maps Embed */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-serif text-black mb-8">Find Us on the Map</h2>
+          <div className="w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <iframe
+              title="Panda Massage Location - Dubai Sport City"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.734426247832!2d55.169901476483326!3d25.132918627193154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b9b9b9b9b9b%3A0x9b9b9b9b9b9b9b9b!2sDubai%20Sports%20City!5e0!3m2!1sen!2sae!4v1234567890"
+            ></iframe>
+          </div>
+          <div className="mt-6 p-6 bg-panda-gray rounded-lg">
+            <p className="text-sm text-gray-600">
+              <strong>Panda Massage</strong> is located in Dubai Sport City, Dubai, UAE. 
+              We serve the entire Dubai community with professional massage and spa services.
+            </p>
+          </div>
         </div>
       </div>
     </div>
